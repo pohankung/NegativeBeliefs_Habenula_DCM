@@ -43,7 +43,7 @@ save('./BMA_search_AB_Discovery.mat', 'BMA'); % output used to inform
 
 % Review BMA results
 % -----------------------------------------------------------------------
-% Second-level effect - Mean (Supplementary Table 7)
+% Second-level effect - Mean (Supplementary Table 3)
 %   Threshold: Free energy, Strong evidence (Pp>.95)
 %   Display as matrix: 
 %     1) A-matrix (endogenous connectivity)
