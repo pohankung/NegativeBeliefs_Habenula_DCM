@@ -31,12 +31,12 @@ M.Xnames = X_labels;
 
 
 % Update 3rd-level prior expectation (and covariance) with BMA posterior
-% from the Discovery model
+% from the discovery model
 % -----------------------------------------------------------------------
 % [PEB, RCM] = spm_dcm_peb(DCM, M, {'A','B'});
 % Main Inputs:
 % - DCM:    Structure array of inverted DCMs that describe the same network
-%            model explored in the Discovery dataset. 
+%            model explored in the discovery dataset. 
 % - M:      2nd-level design matrix containing group effect and other related parameters.
 %   1) M.bE:    3rd-level prior expectation. Here, we input the posterior
 %               expectations obtained via BMR (i.e., BMA.Ep)
@@ -44,12 +44,12 @@ M.Xnames = X_labels;
 %               covariances obtained via BMR (i.e., BMA.Cp)
 % -----------------------------------------------------------------------
 
-% Load Discovery PEB model (Bayesian-averaged) to extract posteriors
+% Load discovery PEB model (Bayesian-averaged) to extract posteriors
 load('../analysis/BMA_search_AB_Discovery.mat');
     
-    % Replace generic priors with Discovery model posteriors
+    % Replace generic priors with discovery model posteriors
     % This step effectively limits PEB model inversion to only consider
-    % connections with posterior probability >.95 in the Discovery model
+    % connections with posterior probability >.95 in the discovery model
 
     Ep_base = zeros(size(spm_vec(DCM{1,1}.M.pE)));
     for i = 1:size(BMA.Ep)
@@ -90,7 +90,7 @@ spm_dcm_peb_review(BMA, DCM)
 
 
 % Produce comparison plots of modulatory connectivity parameters of the
-% Discovery and Replication models (Figure 4c)
+% discovery and replication models (Figure 4c)
 % -----------------------------------------------------------------------
 % spm_plot_ci(E,C,x,j,s)
 %
@@ -183,8 +183,8 @@ set(gca,'YTickLabel',get(gca, 'YTickLabel'),'fontsize',24);
 set(findall(gca, '-property', 'FontName'), 'FontName', 'Arial');
 
 % Add asterisk to mark connectivity showing consistent estimates across
-% models (i.e., Replication model connectivity with Pp > .95 while also
-% falling within the 95% CI of the Discovery model connectivity estimate)
+% models (i.e., replication model connectivity with Pp > .95 while also
+% falling within the 95% CI of the discovery model connectivity estimate)
 for i = length(rj)+1:length(rj)*2
     ci_l = covar_lines(i).YData(1);
     ci_u = covar_lines(i).YData(2);
