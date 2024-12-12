@@ -1,7 +1,7 @@
 %% Parametric Empirical Bayes (PEB), Effects of PTQ on habenula effective connectivity
 
 % This script reproduces the habenula effective connectivity results
-% reported in the Kung et al. manuscript (Supplementary Table 4).
+% reported in the Kung et al. manuscript (Supplementary Table 3).
 
 % -----------------------------------------------------------------------
 % Please ensure that your SPM12 folder (r7771) is listed in your MATLAB set
@@ -41,7 +41,7 @@ BMA = spm_dcm_peb_bmc(PEB);
 
 % Review BMA results
 % -----------------------------------------------------------------------
-% Second-level effect - PTQ (Supplementary Table 4)
+% Second-level effect - PTQ (Supplementary Table 3)
 %   Threshold: Free energy, Strong evidence (Pp>.95)
 %   Display as matrix: 
 %     1) A-matrix (endogenous connectivity)
