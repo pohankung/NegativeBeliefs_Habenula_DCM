@@ -1,4 +1,4 @@
-# Neural circuitry of the habenula drives negative self-cognitions (in prep)
+# Habenula neural circuitry drives negative self-cognitions (in prep)
 The repository contains [de-identified effective connectivity data](/data/) and the codes used to support the main findings in the [Kung et al. manuscript](DOI). 
 
 The present study leverages ultra-high field (UFH) MRI and dynamic causal model (DCM) to characterise habenula effective connectivity during the processing of negative self-cognitions commonly reported in psychopathology. Out-of-sample reliability of the current findings is assessed in an independent replication sample and a randomised stratified 5-fold validation analysis.
