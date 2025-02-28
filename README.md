@@ -8,12 +8,16 @@ The [Run_PEB_Discovery.m](analysis/Run_PEB_Discovery.m) script reproduces the DC
 
 The [Run_PEB_Discovery_CNBTQ.m](analysis/Run_PEB_Discovery_CNBTQ.m) and [Run_PEB_Discovery_PTQ.m](analysis/Run_PEB_Discovery_PTQ.m) scripts reproduces the DCM exploring the association between habenula effective connectivity and participant's endorsement of negative self-cognitions and tendency of perseverative thinking, respectively.
 
+The [Run_PEB_Discovery_LeftHemisphere.m](analysis/Run_PEB_Discovery_LeftHemisphere.m) script reproduces the exploratory DCM results of the left-lateralised habenula connectivity model. 
+
 ## Replication and 5-fold validation models
 The **Run_PEB_Replication.m** scripts reproduce habenula connectivity results in the replication sample. The prior distribution of the replication model is furnished with the posterior distribution of the discovery model, taking into account information on habenula connectivity that was obtained through the discovery model when inverting the replication PEB model[<sup>1</sup>](analysis/Run_PEB_informed_Replication.m). Key modulatory connectivity estimates from this "informed" replication model are compared to that of the discovery model and visualised using the same script.
 
 A "non-informed" replication model with the generic prior distribution is also inverted[<sup>2</sup>](analysis/Run_PEB_noninformed_Replication.m), and the results are summarised in the Supplementary Information.
 
 The script [Run_PEB_informed_kfold.m](analysis/Run_PEB_informed_kfold.m) reproduces the effective connectivity results across the 5-fold validation models and the comparison plot included in the Supplementary Information.
+
+## Decisional bias to restructure or repeat self-cognitions
 
 ## Notes
 1. A custom version of `spm_plot_ci` is used to calculate the 95% confidence interval of the model parameter estimates. This is included [here](custom/spm_plot_ci.m).
