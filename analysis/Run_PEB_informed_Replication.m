@@ -1,7 +1,7 @@
 %% Parametric Empirical Bayes (PEB), Replication model (informed)
 
 % This script reproduces the habenula effective connectivity results
-% reported in the Kung et al. manuscript (Figure 4, Supplementary Table 5).
+% reported in the Kung et al. manuscript (Figure 4, Supplementary Table 6).
 
 % -----------------------------------------------------------------------
 % 1) Please ensure that your SPM12 folder (r7771) is listed in your MATLAB set
@@ -80,7 +80,7 @@ save('./BMA_search_AB_Replication.mat', 'BMA'); % output used for visualisation
 
 % Review BMA results
 % -----------------------------------------------------------------------
-% Second-level effect - Mean (Figure 4a, Supplementary Table 5)
+% Second-level effect - Mean (Figure 4a, Supplementary Table 6)
 %   Threshold: Free energy, Strong evidence (Pp>.95)
 %   Display as matrix: 
 %     1) A-matrix (endogenous connectivity)
