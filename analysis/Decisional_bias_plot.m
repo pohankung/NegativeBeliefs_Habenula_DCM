@@ -17,8 +17,8 @@ clear
 
 %% 1: Load Data & create variables
 
-data1 = readtable('CNBTQ_discovery.csv'); % Discovery sample (n = 45)
-data2 = readtable('CNBTQ_replication.csv'); % Replication sample (n = 54)
+data1 = readtable('../data/CNBTQ_discovery.csv'); % Discovery sample (n = 45)
+data2 = readtable('../data/CNBTQ_replication.csv'); % Replication sample (n = 54)
 
 responses1 = data1{:, 1:24};
 ratings1 = data1{:, 25:48};
