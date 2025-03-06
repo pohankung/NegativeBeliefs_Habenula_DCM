@@ -18,6 +18,7 @@ A "non-informed" replication model with the generic prior distribution is also i
 The script [Run_PEB_informed_kfold.m](analysis/Run_PEB_informed_kfold.m) reproduces the effective connectivity results across the 5-fold validation models and the comparison plot included in the Supplementary Information.
 
 ## Decisional bias to restructure or repeat self-cognitions
+The script [Decisional_bias_plot.m](analysis/Decisional_bias_plot.m) reproduces the supplementary results regarding participant negative self-cognition endorsement and choice biases during the cognitive restructuring task.
 
 ## Notes
 1. A custom version of `spm_plot_ci` is used to calculate the 95% confidence interval of the model parameter estimates. This is included [here](custom/spm_plot_ci.m).
