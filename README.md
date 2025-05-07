@@ -1,5 +1,5 @@
-# Habenula contributions to negative self-cognitions (in press)
-The repository contains [de-identified effective connectivity data](/data/) and the codes used to support the main findings in the [Kung et al. manuscript](https://www.researchsquare.com/article/rs-5634827/v1) (DOI : 10.1038/s41467-025-59611-7). 
+# Habenula contributions to negative self-cognitions
+The repository contains [de-identified effective connectivity data](/data/) and the codes used to support the main findings in the [Kung et al. manuscript](https://rdcu.be/ek1hW) (DOI : 10.1038/s41467-025-59611-7). 
 
 The present study leverages ultra-high field (UFH) MRI and dynamic causal model (DCM) to characterise habenula effective connectivity during the processing of negative self-cognitions commonly reported in psychopathology. Out-of-sample reliability of the current findings is assessed in an independent replication sample and a randomised stratified 5-fold validation analysis.
 
